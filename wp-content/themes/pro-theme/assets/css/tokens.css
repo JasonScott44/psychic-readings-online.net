@@ -1,0 +1,55 @@
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+    /* Colors */
+    --color-primary:      #0F0F1A;
+    --color-secondary:    #5B2C8E;
+    --color-accent:       #D4A843;
+    --color-bg:           #0F0F1A;
+    --color-bg-alt:       #161628;
+    --color-bg-light:     #F5F3F0;
+    --color-text:         #F5F3F0;
+    --color-text-muted:   #B8B5C0;
+    --color-text-dark:    #1A1A2E;
+    --color-border:       rgba(212, 168, 67, 0.25);
+    --color-border-light: rgba(245, 243, 240, 0.1);
+    --color-gold-glow:    rgba(212, 168, 67, 0.15);
+    --color-purple-glow:  rgba(91, 44, 142, 0.3);
+    --color-overlay:      rgba(15, 15, 26, 0.7);
+
+    /* Typography */
+    --font-heading: 'Vollkorn', Georgia, serif;
+    --font-body:    'Hind', 'Segoe UI', sans-serif;
+    --fs-hero:   clamp(2.2rem, 5vw, 3.5rem);
+    --fs-h1:     clamp(2rem, 4vw, 3rem);
+    --fs-h2:     clamp(1.6rem, 3vw, 2.25rem);
+    --fs-h3:     clamp(1.2rem, 2vw, 1.5rem);
+    --fs-body:   1.0625rem;
+    --fs-small:  0.9rem;
+    --lh-heading: 1.25;
+    --lh-body:    1.7;
+
+    /* Spacing */
+    --sp-xs:  0.25rem;
+    --sp-sm:  0.5rem;
+    --sp-md:  1rem;
+    --sp-lg:  2rem;
+    --sp-xl:  4rem;
+    --sp-2xl: 6rem;
+    --section-py: clamp(3.5rem, 8vw, 6rem);
+
+    /* Layout */
+    --container-max:  1200px;
+    --container-pad:  1.5rem;
+    --grid-gap:       1.5rem;
+
+    /* Borders & Effects */
+    --radius-sm:  4px;
+    --radius-md:  8px;
+    --radius-lg:  16px;
+    --radius-xl:  24px;
+    --shadow-sm:  0 2px 8px rgba(0,0,0,0.2);
+    --shadow-md:  0 4px 20px rgba(0,0,0,0.3);
+    --shadow-lg:  0 8px 40px rgba(0,0,0,0.4);
+    --shadow-gold: 0 4px 20px rgba(212, 168, 67, 0.2);
+    --transition: 0.25s ease;
+}

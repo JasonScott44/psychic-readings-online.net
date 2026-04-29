@@ -1,0 +1,270 @@
+/* ── Hero Section ──────────────────────────────────────── */
+.hero-section {
+    position: relative;
+    padding: var(--sp-2xl) 0;
+    text-align: center;
+    overflow: hidden;
+    background: var(--color-bg) url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-hero-banner.png') center/cover no-repeat;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,15,26,0.6) 0%, rgba(15,15,26,0.85) 100%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 var(--container-pad);
+}
+.hero-section h1 {
+    font-size: var(--fs-hero);
+    color: var(--color-text);
+    margin-bottom: var(--sp-lg);
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+.hero-subtitle {
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: var(--color-text-muted);
+    max-width: 680px;
+    margin: 0 auto var(--sp-lg);
+    line-height: 1.7;
+}
+.hero-section .cta-button { margin-top: var(--sp-md); }
+
+/* Inner page hero — smaller */
+.hero-inner {
+    padding: var(--sp-xl) 0;
+    background-image: none;
+    background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+}
+.hero-inner::before { display: none; }
+.hero-inner h1 {
+    font-size: var(--fs-h1);
+    text-shadow: none;
+}
+
+/* ── Trust Bar ────────────────────────────────────────── */
+.trust-bar {
+    background: var(--color-bg-alt);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--sp-lg) var(--container-pad);
+}
+.trust-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-md) var(--sp-xl);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+.trust-items span {
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-left: 1.2rem;
+}
+.trust-items span::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+/* ── Generic Sections ─────────────────────────────────── */
+.platform-section,
+.specialties-section,
+.free-minutes-section,
+.how-it-works-section,
+.testimonials-section,
+.platform-numbers,
+.final-cta,
+.featured-readers,
+.filter-section,
+.specialties-directory,
+.steps-section,
+.features-section,
+.pricing-explained,
+.free-minutes-detail,
+.spending-controls,
+.guarantee-section,
+.faq-section,
+.blog-listing,
+.about-content,
+.contact-content,
+.testimonials-full,
+.policy-content,
+.legal-content,
+.sitemap-content,
+.not-found-content,
+.price-tiers {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--section-py) var(--container-pad);
+}
+
+/* ── Grids ────────────────────────────────────────────── */
+.specialty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--sp-lg);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--sp-lg);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--grid-gap);
+    margin-top: var(--sp-lg);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--grid-gap);
+    text-align: center;
+}
+
+.price-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--grid-gap);
+}
+
+/* ── Testimonials BG ──────────────────────────────────── */
+.testimonials-section {
+    position: relative;
+    background: url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-testimonials-bg.png') center/cover no-repeat;
+}
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 15, 26, 0.85);
+    z-index: 0;
+}
+.testimonials-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Also testimonials-full (testimonials page) */
+.testimonials-full {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+}
+
+/* ── Final CTA ────────────────────────────────────────── */
+.final-cta {
+    text-align: center;
+    border-top: 1px solid var(--color-border-light);
+}
+.final-cta h2 {
+    color: var(--color-accent);
+}
+
+/* ── Steps Section (How It Works page) ────────────────── */
+.steps-section {
+    counter-reset: step-counter;
+}
+.step-detail {
+    text-align: left;
+    padding: var(--sp-lg);
+    border-bottom: 1px solid var(--color-border-light);
+}
+.step-detail:last-child { border-bottom: none; }
+
+/* ── Featured Readers ─────────────────────────────────── */
+.featured-readers .reader-card {
+    margin-bottom: var(--sp-lg);
+}
+
+/* ── Blog Post Grid ───────────────────────────────────── */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--grid-gap);
+}
+
+/* ── Single Post Hero ─────────────────────────────────── */
+.post-hero {
+    background: var(--color-bg-alt);
+    padding: var(--sp-xl) var(--container-pad);
+    text-align: center;
+}
+.post-hero h1 {
+    max-width: 800px;
+    margin: 0 auto var(--sp-md);
+}
+
+/* ── Footer Accent ────────────────────────────────────── */
+.site-footer {
+    background: var(--color-bg-alt) url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-footer-accent.png') bottom center/100% auto no-repeat;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+    .main-nav { display: none; }
+    .main-nav.is-open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-bg);
+        border-bottom: 1px solid var(--color-border-light);
+        padding: var(--sp-lg);
+    }
+    .main-nav.is-open ul {
+        flex-direction: column;
+        gap: var(--sp-md);
+    }
+    .menu-toggle { display: flex; }
+
+    .trust-items { gap: var(--sp-sm) var(--sp-lg); }
+
+    .specialty-grid,
+    .steps-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-tiers {
+        grid-template-columns: 1fr;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links { gap: var(--sp-sm) var(--sp-md); }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .trust-items span {
+        font-size: 0.85rem;
+    }
+}
