@@ -4,7 +4,7 @@
     padding: var(--sp-2xl) 0;
     text-align: center;
     overflow: hidden;
-    background: var(--color-bg) url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-hero-banner.png') center/cover no-repeat;
+    background: var(--color-bg) url('../images/psychic-readings-online-hero-banner.png') center/cover no-repeat;
 }
 .hero-section::before {
     content: '';
@@ -149,7 +149,7 @@
 /* ── Testimonials BG ──────────────────────────────────── */
 .testimonials-section {
     position: relative;
-    background: url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-testimonials-bg.png') center/cover no-repeat;
+    background: url('../images/psychic-readings-online-testimonials-bg.png') center/cover no-repeat;
 }
 .testimonials-section::before {
     content: '';
@@ -215,7 +215,7 @@
 
 /* ── Footer Accent ────────────────────────────────────── */
 .site-footer {
-    background: var(--color-bg-alt) url('/wp-content/themes/pro-theme/assets/images/psychic-readings-online-footer-accent.png') bottom center/100% auto no-repeat;
+    background: var(--color-bg-alt) url('../images/psychic-readings-online-footer-accent.png') bottom center/100% auto no-repeat;
 }
 
 /* ── Responsive ───────────────────────────────────────── */
