@@ -1,0 +1,36 @@
+/*
+Theme Name: Pro Theme
+Theme URI: https://psychic-readings-online.net
+Author: WP-Net-Control
+Description: Premium psychic readings online theme — dark, gold & purple design system.
+Version: 1.0.0
+Text Domain: pro-theme
+*/
+
+:root {
+    --color-primary: #0F0F1A;
+    --color-secondary: #5B2C8E;
+    --color-accent: #D4A843;
+    --color-bg: #0F0F1A;
+    --color-bg-alt: #1A1A2E;
+    --color-text: #E0E0E0;
+    --color-text-light: #A0A0B0;
+    --color-border: #2A2A40;
+    --color-success: #4caf50;
+    --color-danger: #ef5350;
+    --font-heading: 'Vollkorn', serif;
+    --font-body: 'Hind', sans-serif;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(91,44,142,0.2);
+    --shadow-lg: 0 8px 40px rgba(91,44,142,0.3);
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --transition: 0.3s ease;
+}
+
